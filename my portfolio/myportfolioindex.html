@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <!-- main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="portmainstyle.css">
+    
+    
+</head>
+<body>
+    <!-- fixed heading bar with nav icon -->
+    
+    
+    <div id="title"><img src="watermark1.png"></div>
+    <div id="back"><img src="icons/3dHexPage75o.png"></div>
+    <div id="nav">
+        <img src="icons/menu_icon.png">
+    </div>
+
+    <!-- possibly change opacity for background color on content divs to be able to see some of the background/animations-->
+    <div class="conten">
+        <div id="profile-pic"><img src="/images/profpic1.jpg"></div>
+        <hr id="about-hr">
+        <div id="sub-about">
+            <div id="lang-icons">
+                <table id="lang-table">
+                    <tr>
+                        <td><img src="/icons/lang icons/icons8-javascript-96.png"></td>
+                        <td><img src="/icons/lang icons/icons8-html-5-96.png"></td>
+                        <td><img src="/icons/lang icons/icons8-css3-96.png"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/icons/lang icons/icons8-python-96.png"></td>
+                        <td><img src="/icons/lang icons/icons8-django-96.png"></td>
+                        <td><img src="/icons/lang icons/icons8-java-96.png"></td>
+                    </tr>
+                    
+                </table>
+
+
+            </div>
+                
+            <div id="about-me"> Hello! My name is Dillon, please step into my digital office. I am a self taught web developer with a passion for creating functional web apps and beautiful websites. Please feel free to take a look at some of my recent projects. <br><br> I am also into photo/video and graphic design. Come hang out in my Twitch channel and say hi. This website is a perpetual work in progress so come back often to check out what I have been up to! 
+            </div>
+        </div>
+    </div>
+
+    <div class="conten">
+        <div id="rp-title">List Site</div>
+        <div id="rp-screenshot">
+            <img src="project screenshots/ListSiteScreenshot.png">
+        </div>
+        <!-- using montserrat light with bolder in stylesheet. need to download and install full font family-->
+        <div id="rp-desc">I created this website to input and track retail furniture display data. My reps can easily complete the checklist to let me know which displays and marketing materials need to be ordered. Additionally, the ability to maintain a real time database of this information saved time for the reps as well as greatly reduced the lead time for replacing worn retail displays.</div>
+    </div>
+
+    <div class="conten" id="carousel">
+        <!-- this is where the photo carousel is going to be placed-->
+        <img src="images/carousel/Symi Boats 4x6.jpg">
+    </div>
+    <div class="conten">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni dolorem dolores sunt neque harum facilis culpa modi omnis, reprehenderit dolorum voluptate odio? Inventore placeat provident voluptatibus dolorum, quaerat quia! Quaerat.</p>
+    </div>
+
+    
+    <script>window.addEventListener(
+        "scroll",
+        () => {
+          document.body.style.setProperty(
+            "--scroll",
+            window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+          );
+        },
+        false);
+    </script>
+
+    
+    
+</body>
+</html>

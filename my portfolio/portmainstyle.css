@@ -1,0 +1,197 @@
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('/fonts/webfontkit-20200920-154726/montserrat-light-webfont.woff2') format('woff2'),
+         url('/fonts/webfontkit-20200920-154726/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+#back {
+    position: fixed;
+    background-color: rgb(53, 53, 53);
+    text-align: center;
+    z-index: -1;
+    animation: paralax 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#title {
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+    background-color: rgb(196, 196, 196);
+    opacity: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 2;
+    
+    
+}
+
+img[src="watermark1.png"]{
+    float: center;
+    padding: 10px;
+    border-radius: 30px;
+    width: 80%;
+    border: 5px black;
+    z-index: 1;
+    
+    
+}
+
+img[src="icons/menu_icon.png"]{
+    float: right;
+    padding: 1%;
+    margin: 3%;
+    width: 10%;
+}
+
+#nav {
+    right: 0px;
+    top: 0px;
+    position: fixed;
+}
+
+.conten {
+    margin-top: 9%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: .1em solid black;
+    border-radius: 20px;
+    padding: 2%;
+    background-color: rgba(196, 196, 196, 1);
+    display: inline-block;
+    width: auto;
+
+    animation-name: contentflash;
+    animation: 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(car(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#profile-pic {
+    position: relative;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+#profile-pic img {
+    width: 45%;
+    border: .2em solid  rgb(74, 53, 83);
+    
+}
+
+#lang-icons {
+    width: 50%;
+    float: left;
+    
+}
+
+#sub-about {
+    display: inline-block;
+    
+    
+}
+#about-me {
+    margin-left: 50%;
+    height: 200px;
+    font-size: x-large;
+    font-family:'montserratlight';
+    text-align: center;
+    line-height: 1.5;
+    vertical-align: middle;    
+}
+
+
+
+#lang-table {
+    
+    width: 90%;
+    vertical-align: middle;
+    
+    
+}
+
+#lang-table td {
+    text-align: center;
+    width: 20%;
+}
+
+#lang-table td img {
+    width: 50%;
+}
+
+
+
+#about-hr {
+    margin: 2%;
+}
+
+#rp-title {
+    text-align: center;
+    font-family: 'montserratlight';
+    font-size: 50px;
+    padding: 1%;
+}
+
+#rp-screenshot {
+    position: relative;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#rp-screenshot img {
+    width: 60%;
+    border: .2em solid  rgb(74, 53, 83);
+}
+
+#rp-desc {
+    margin: 1%;
+    padding: 1%;
+    font-family: 'montserratlight';
+    
+    text-align: center;
+    font-size: x-large;
+    line-height: 1.5;
+}
+#carousel {
+   text-align: center;
+   
+    
+}
+
+img[src="images/carousel/Symi Boats 4x6.jpg"]{
+    margin: auto;
+    width: 60%;
+}
+
+@keyframes paralax {
+    to {
+        transform: translate(0px, -800px)
+    }
+}
+
+@keyframes paralax2 {
+    to {
+        transform: translate(0px, 1000px)
+    }
+}
